@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar">
+  <!-- icons -->
+  <svg class="hidden" xmlns="http://www.w3.org/2000/svg" height="0" width="0" viewBox="0 0 32 188">
+    <svg id="behance" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.00003480911255 28">
+      <g transform="scale(.027344)">
+        <path d="m1056 193.71h-292v70.857h292v-70.857zm-144 243.43q-51.429 0-83.429 30t-35.429 81.429h233.14q-10.286-111.43-114.29-111.43zm9.14 334.29q36 0 69.714-18.286t43.429-49.714h126.29q-57.143 175.43-244 175.43-122.29 0-194.57-75.429t-72.286-198.29q0-118.86 74.571-197.43t192.29-78.571q78.857 0 137.43 38.857t87.429 102.29 28.857 141.71q0 9.714-1.143 26.857h-376q0 63.429 32.857 98t95.143 34.571zm-762.85-28.57h169.14q117.14 0 117.14-95.429 0-102.86-113.71-102.86h-172.57v198.29zm0-306.86h160.57q44.571 0 70.571-20.857t26-64.857q0-82.286-108.57-82.286h-148.57v168zm-158.29-290.86h339.43q49.714 0 88.571 8t72.286 27.143 51.429 55.143 18 88q0 103.43-98.286 150.29 65.143 18.286 98.286 65.714t33.143 116.57q0 42.857-14 78t-37.714 59.143-56.286 40.571-69.143 24-76.571 7.429h-349.14v-720z"/>
+      </g>
+    </svg>
+    <svg id="dribble" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.99999238053951 28">
+      <g transform="scale(.027344)">
+        <path d="m585.14 857.14q-24-137.71-80-284.57h-1.143l-1.143 0.571q-9.143 3.429-24.571 9.429t-57.714 28-78.286 46.857-74.857 65.429-58.857 84.571l-8.571-6.286q105.14 85.714 238.86 85.714 75.429 0 146.29-29.714zm-105.71-346.85q-12-28-30.286-63.429-177.71 53.143-384.57 53.143-0.571 4-0.571 12 0 70.857 25.143 135.14t70.857 115.14q28.571-50.857 70.571-95.143t81.429-71.143 74.571-46.286 56.857-27.429l21.143-7.429q2.286-0.571 7.429-2t7.429-2.571zm-61.14-121.15q-68.571-121.71-139.43-216-78.857 37.143-133.71 106.29t-73.143 155.43q172.57 0 346.29-45.714zm390.85 182.29q-120-34.286-233.71-16.571 49.714 136.57 73.143 268 63.429-42.857 105.71-108.29t54.857-143.14zm-460-423.43q-0.571 0-1.143 0.571 0.571-0.571 1.143-0.571zm337.15 82.86q-105.71-93.714-247.43-93.714-43.429 0-88.571 10.857 74.857 97.143 140.57 218.29 39.429-14.857 74.286-34.571t55.143-35.143 37.429-32.571 21.429-23.143zm127.42 277.14q-1.714-132.57-85.143-234.29l-0.571 0.571q-5.143 6.857-10.857 14t-24.857 25.429-40.571 34.571-57.143 37.143-75.143 36.857q14.286 30.286 25.143 54.286 1.143 3.429 3.714 10t4.286 9.429q20.571-2.857 42.571-4t42-1.143 39.429 0.857 36.571 2.286 32.286 3.143 27.429 3.714 20.857 3.429 14.286 2.571zm64 4q0 119.43-58.857 220.29t-159.71 159.71-220.29 58.857-220.29-58.857-159.71-159.71-58.857-220.29 58.857-220.29 159.71-159.71 220.29-58.857 220.29 58.857 159.71 159.71 58.857 220.29z"/>
+      </g>
+    </svg>
+    <svg id="facebook" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16.468785643577576 28">
+      <g transform="scale(.027344)">
+        <path d="m548 6.857v150.86h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.43l-22.286 169.14h-145.14v433.71h-174.86v-433.71h-145.71v-169.14h145.71v-124.57q0-106.29 59.429-164.86t158.29-58.571q84 0 130.29 6.857z"/>
+      </g>
+    </svg>
+    <svg id="googleplus" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+      <g transform="scale(.019531)">
+        <path d="m101.84 286.16c0 76.493 25.549 131.69 75.878 164.1 41.267 26.624 89.088 30.618 113.97 30.618 6.042 0 10.906-0.307 14.285-0.512 0 0-7.885 51.405 30.208 102.2h-1.741c-65.997 0-281.24 13.773-281.24 190.82 0 180.02 197.68 189.18 237.36 189.18 3.123 0 4.966-0.102 4.966-0.102 0.41 0 3.226 0.102 8.09 0.102 25.446 0 91.238-3.174 152.32-32.922 79.258-38.4 119.45-105.42 119.45-198.91 0-90.317-61.235-144.08-105.93-183.4-27.29-24.013-50.893-44.698-50.893-64.819 0-20.48 17.254-35.891 39.014-55.398 35.277-31.488 68.557-76.39 68.557-161.28 0-74.598-9.677-124.72-69.325-156.52 6.195-3.174 28.211-5.478 39.066-7.014 32.307-4.403 79.565-9.421 79.565-35.789v-5.069h-235.47c-2.355 0.102-238.13 8.806-238.13 224.72zm380.11 461.46c4.506 71.987-57.088 125.08-149.61 131.79-93.952 6.912-171.26-35.379-175.77-107.32-2.202-34.611 13.005-68.403 42.752-95.386 30.157-27.29 71.578-44.186 116.63-47.514 5.325-0.307 10.598-0.614 15.872-0.614 86.989 0.051 145.87 51.149 150.12 119.04zm-61.5-510.77c23.091 81.306-11.776 166.2-67.379 181.91-6.4 1.792-12.954 2.662-19.661 2.662-50.893 0-101.32-51.507-120.06-122.52-10.445-39.731-9.574-74.65 2.406-108.13 11.725-33.024 32.922-55.194 59.546-62.72 6.4-1.792 13.005-2.714 19.712-2.714 61.44 0 100.97 25.498 125.44 111.51zm398.75 172.75v-153.6h-102.4v153.6h-153.6v102.4h153.6v153.6h102.4v-153.6h153.6v-102.4h-153.6z"/>
+      </g>
+    </svg>
+    <svg id="instagram" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.00000246365653 28">
+      <g transform="scale(.027344)">
+        <path d="m199.43 357.14v566.29h-188.57v-566.29h188.57zm12-174.85q0.571 41.714-28.857 69.714t-77.429 28h-1.143q-46.857 0-75.429-28t-28.571-69.714q0-42.286 29.429-70t76.857-27.714 76 27.714 29.143 70zm666.28 416.57v324.57h-188v-302.86q0-60-23.143-94t-72.286-34q-36 0-60.286 19.714t-36.286 48.857q-6.286 17.143-6.286 46.286v316h-188q1.143-228 1.143-369.71t-0.571-169.14l-0.571-27.429h188v82.286h-1.143q11.429-18.286 23.429-32t32.286-29.714 49.714-24.857 65.429-8.857q97.714 0 157.14 64.857t59.429 190z"/>
+      </g>
+    </svg>
+    <svg id="skype" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.000020891427994 28">
+      <g transform="scale(.027344)">
+        <path d="m670.29 607.43q0-28.571-11.143-52.286t-27.714-39.143-41.714-28-47.143-19.429-50-13.143l-59.429-13.714q-17.143-4-25.143-6t-20-6.571-17.143-9.143-9.429-12-4.286-17.143q0-44 82.286-44 24.571 0 44 6.857t30.857 16.286 21.714 19.143 22.857 16.571 27.429 6.857q26.857 0 43.143-18.286t16.286-44q0-31.429-32-56.857t-81.143-38.571-104-13.143q-38.857 0-75.429 8.857t-68.286 26.857-50.857 49.714-19.143 73.429q0 34.857 10.857 60.857t32 43.143 45.714 27.714 58.857 18.571l83.429 20.571q51.429 12.571 64 20.571 18.286 11.429 18.286 34.286 0 22.286-22.857 36.857t-60 14.571q-29.143 0-52.286-9.143t-37.143-22-26-25.714-26.286-22-30.857-9.143q-28.571 0-43.143 17.143t-14.571 42.857q0 52.571 69.714 90t166.29 37.429q41.714 0 80-10.571t70-30.571 50.571-53.429 18.857-75.143zm207.42 124q0 90.857-64.286 155.14t-155.14 64.286q-74.286 0-133.71-45.714-44 9.143-85.714 9.143-81.714 0-156.29-31.714t-128.57-85.714-85.714-128.57-31.714-156.29q0-41.714 9.143-85.714-45.714-59.429-45.714-133.71 0-90.857 64.286-155.14t155.14-64.286q74.286 0 133.71 45.714 44-9.143 85.714-9.143 81.714 0 156.29 31.714t128.57 85.714 85.714 128.57 31.714 156.29q0 41.714-9.143 85.714 45.714 59.429 45.714 133.71z"/>
+      </g>
+    </svg>
+    <svg id="twitter" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25.999969244003296 28">
+      <g transform="scale(.027344)">
+        <path d="m925.71 233.14q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.29t-66 142-105.43 120.29-147.43 83.429-184.57 31.143q-154.86 0-283.43-82.857 20 2.286 44.571 2.286 128.57 0 229.14-78.857-60-1.143-107.43-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.43v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.29 136.29t212.29 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.57t130.57-54q80 0 134.86 58.286 62.286-12 117.14-44.571-21.143 65.714-81.143 101.71 53.143-5.714 106.29-28.571z"/>
+      </g>
+    </svg>
+  </svg>
+
+
+
+  <!-- menu -->
+  <div class="container">
+    <nav class="navbar  navbar-default  navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- carousell -->
+  <div class="container-full">
+    <div class="carousel slide" id="carousel-example-generic" data-interval="7000000" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/bg-slider-1.jpg" alt="bg-slider-1.jpg">
+          <div class="carousel-caption">
+            <h2 class="carousel-heading">Welcome to our marketplace.<br>Slide 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere incidunt saepe expedita alias delectus laudantium et. A autem consequatur nemo sapiente nisi, atque cupiditate, aperiam tenetur magni recusandae, sunt.</p>
+            <a href="#view-more" class="btn  carousel-caption__btn">View More</a><a href="#video" class="btn  carousel-caption__btn">Video tour</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/bg-slider-2.png" alt="bg-slider-2.png">
+          <div class="carousel-caption">
+            <h2 class="carousel-heading">Welcome to our marketplace.<br>Slide 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere incidunt saepe expedita alias delectus laudantium et. A autem consequatur nemo sapiente nisi, atque cupiditate, aperiam tenetur magni recusandae, sunt.</p>
+            <a href="#view-more" class="btn  carousel-caption__btn">View More</a><a href="#video" class="btn  carousel-caption__btn">Video tour</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/bg-slider-3.jpg" alt="bg-slider-3.jpg">
+          <div class="carousel-caption">
+            <h2 class="carousel-heading">Welcome to our marketplace.<br>Slide 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere incidunt saepe expedita alias delectus laudantium et. A autem consequatur nemo sapiente nisi, atque cupiditate, aperiam tenetur magni recusandae, sunt.</p>
+            <a href="#view-more" class="btn  carousel-caption__btn">View More</a><a href="#video" class="btn  carousel-caption__btn">Video tour</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- about -->
+  <section id="about" class="container-fluid  section  section__about">
+    <div class="container">
+      <h2 class="section__header">We are modest.</h2>
+      <div class="row  about">
+        <div class="col-md-7  about__col-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.</p>
+          <p>Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+          <div class="socials-big"></div>
+          <ul class="socials">
+            <li class="socials__item"><a href="#fb"><svg class="socials__svg  socials__svg--fb"><use xlink:href="#facebook"></use></svg></a></li>
+            <li class="socials__item"><a href="#tw"><svg class="socials__svg  socials__svg--tw"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="socials__item"><a href="#gp"><svg class="socials__svg  socials__svg--gp"><use xlink:href="#googleplus"></use></svg></a></li>
+            <li class="socials__item"><a href="#dr"><svg class="socials__svg  socials__svg--dr"><use xlink:href="#dribble"></use></svg></a></li>
+            <li class="socials__item"><a href="#be"><svg class="socials__svg  socials__svg--be"><use xlink:href="#behance"></use></svg></a></li>
+          </ul>
+        </div>
+        <div class="col-md-5  about__col-2">
+          <div class="about__col-item">
+            <div class="about__col-num">01</div>
+            <div class="about__col-content">
+              <h3>Dedication to the customers</h3>
+              <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.</p>
+            </div>
+          </div>
+          <div class="about__col-item">
+            <div class="about__col-num">02</div>
+            <div class="about__col-content">
+              <h3>Working closely with our clients</h3>
+              <p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
+            </div>
+          </div>
+          <div class="about__col-item">
+            <div class="about__col-num">03</div>
+            <div class="about__col-content">
+              <h3>Increase happiness</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- team -->
+  <section id="team" class="container  section  section__team">
+    <h2 class="section__header">Meet the team.</h2>
+    <div class="row  team">
+      <article class="person  col-md-3  col-sm-6  col-xs-10">
+        <div class="person__img">
+          <div class="person__veil">
+            <ul class="person__socials">
+              <li class="person__socials-item"><a href="#tw"><svg class="person__svg  person__svg--tw"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#fb"><svg class="person__svg  person__svg--fb"><use xlink:href="#facebook"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#in"><svg class="person__svg  person__svg--in"><use xlink:href="#instagram"></use></svg></a></li>
+            </ul>
+          </div>
+          <a href="##"><img src="img/person-1.jpg" alt="person-1.jpg"></a>
+        </div>
+        <div class="person__info">
+          <h3 class="person__name">Gloria Bromley</h3>
+          <p class="person__position">CEO and Founder</p>
+        </div>
+      </article>
+
+      <article class="person  col-md-3  col-sm-6  col-xs-10">
+        <div class="person__img">
+          <div class="person__veil">
+            <ul class="person__socials">
+              <li class="person__socials-item"><a href="#tw"><svg class="person__svg  person__svg--tw"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#fb"><svg class="person__svg  person__svg--fb"><use xlink:href="#facebook"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#in"><svg class="person__svg  person__svg--in"><use xlink:href="#instagram"></use></svg></a></li>
+            </ul>
+          </div>
+          <img src="img/person-2.jpg" alt="person-2.jpg">
+        </div>
+        <div class="person__info">
+          <p class="person__name">Paul Torres</p>
+          <p class="person__position">Head of Development</p>
+        </div>
+      </article>
+
+      <article class="person  col-md-3  col-sm-6  col-xs-10">
+        <div class="person__img">
+          <div class="person__veil">
+            <ul class="person__socials">
+              <li class="person__socials-item"><a href="#tw"><svg class="person__svg  person__svg--tw"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#fb"><svg class="person__svg  person__svg--fb"><use xlink:href="#facebook"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#in"><svg class="person__svg  person__svg--in"><use xlink:href="#instagram"></use></svg></a></li>
+            </ul>
+          </div>
+          <img src="img/person-3.jpg" alt="person-3.jpg">
+        </div>
+        <div class="person__info">
+          <p class="person__name">Judith Gillette</p>
+          <p class="person__position">Graphic Desinger</p>
+        </div>
+      </article>
+
+      <article class="person  col-md-3  col-sm-6  col-xs-10">
+        <div class="person__img">
+          <div class="person__veil">
+            <ul class="person__socials">
+              <li class="person__socials-item"><a href="#tw"><svg class="person__svg  person__svg--tw"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#fb"><svg class="person__svg  person__svg--fb"><use xlink:href="#facebook"></use></svg></a></li>
+              <li class="person__socials-item"><a href="#in"><svg class="person__svg  person__svg--in"><use xlink:href="#instagram"></use></svg></a></li>
+            </ul>
+          </div>
+          <img src="img/person-4.jpg" alt="person-4.jpg">
+        </div>
+        <div class="person__info">
+          <p class="person__name">Delores Reed</p>
+          <p class="person__position">Client Service Director</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+
+  <!-- work -->
+  <section id="work" class="container-fluid  section  section__work">
+    <div class="container">
+      <h2 class="section__header  section__header--invert">Lovely work.</h2>
+      <div class="row  work">
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 1</p>
+          </div>
+          <img src="img/portfolio-item-1.jpg" alt="portfolio-item-1.jpg">
+        </article>
+
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 2</p>
+          </div>
+          <img src="img/portfolio-item-2.jpg" alt="portfolio-item-2.jpg">
+        </article>
+
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 3</p>
+          </div>
+          <img src="img/portfolio-item-3.jpg" alt="portfolio-item-3.jpg">
+        </article>
+
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 4</p>
+          </div>
+          <img src="img/portfolio-item-4.jpg" alt="portfolio-item-4.jpg">
+        </article>
+
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 5</p>
+          </div>
+          <img src="img/portfolio-item-5.jpg" alt="portfolio-item-5.jpg">
+        </article>
+
+        <article class="work__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="work__veil">
+            <a class="work__link" href="#wrk">+</a>
+            <p class="work__title">partnership guidlines 6</p>
+          </div>
+          <img src="img/portfolio-item-6.jpg" alt="portfolio-item-6.jpg">
+        </article>
+      </div>
+    </div>
+    <div class="col-md-12  text-center">
+      <a href="#more" class="btn  work__btn-more">Show me more</a>
+    </div>
+  </section>
+
+
+
+  <!-- what we do -->
+  <section id="we_do" class="container section section__we-do">
+    <h2 class="section__header">What we do.</h2>
+    <div class="row  we-do">
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Easy theme Setup</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Pixel perfect design</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Responsive display</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">24/7 support</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Easy theme Setup</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Pixel perfect design</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">Responsive display</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+      <div class="we-do__item  col-md-3  col-sm-6  col-xs-10">
+        <h3 class="we-do__item-head">24/7 support</h3>
+        <div class="we-do__item-text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- features -->
+  <section id="features" class="container-fluid  section  section__features">
+    <div class="container">
+      <h2 class="section__header  section__header--invert">Features.</h2>
+      <div class="row  features">
+        <article class="features__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="features__veil">
+            <a class="features__link" href="#wrk">+</a>
+            <p class="features__title">partnership guidlines 1</p>
+          </div>
+          <img src="img/features-1.png" alt="features-1.png">
+
+        </article>
+
+        <article class="features__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="features__veil">
+            <a class="features__link" href="#wrk">+</a>
+            <p class="features__title">partnership guidlines 2</p>
+          </div>
+          <img src="img/features-2.png" alt="features-2.png">
+        </article>
+
+        <article class="features__item  col-md-4  col-sm-6  col-xs-11">
+          <div class="features__veil">
+            <a class="features__link" href="#wrk">+</a>
+            <p class="features__title">partnership guidlines 3</p>
+          </div>
+          <img src="img/features-3.png" alt="features-3.png">
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>
