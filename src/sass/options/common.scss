@@ -1,8 +1,10 @@
 body {
   position: relative;
-  padding-top: 90px;
   color: $color-base;
   font-family: "Open Sans", sans-serif;
+  &.navbar-is-fixed-top {
+    padding-top: 90px;
+  }
 }
 
 .container-full {

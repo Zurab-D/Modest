@@ -54,7 +54,7 @@
 
 
 .section {
-  padding-bottom: 100px;
+  //padding-bottom: 100px;
   &__header {
     @include callout;
     &--invert {
@@ -196,8 +196,7 @@
     padding: 0;
     margin: 3px 0 0;
     //line-height: .9;
-  }
-}
+  } }
 
 
 
@@ -280,12 +279,13 @@
 
 
 .we-do {
-
+  padding-bottom: 115px;
 }
 
 
 
 .features {
+  padding-bottom: 103px; 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -293,7 +293,6 @@
   &__item {
     position: relative;
     margin: 15px 0;
-    //max-width: 360px;
     &:hover {
       .work__veil {
         display: flex;
@@ -302,6 +301,7 @@
     }
     & img {
       width: 100%;
+      @include padding-to-edge (44px, $features-article-header-size, $features-article-header-height);
     }
   }
   &__veil {
@@ -345,5 +345,46 @@
     .section__features {
       background-color: $color-dark;
     }
+  }
+}
+
+
+
+.article {
+  &__header {
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+  }
+  &__text{
+    margin: 0;
+    padding: 0;
+    font-size: $article-text-size;
+    line-height: $article-text-height;
+  }
+  .features & {
+    @include padding-to-edge(5px, $article-text-size, $article-text-height); 
+    &__header {
+      font-size: $features-article-header-size;
+      line-height: $features-article-header-height;
+      color: #fff;
+      @include padding-between-blocks(31px, $features-article-header-size, $features-article-header-height, $article-text-size, $article-text-height);
+    }
+    &__text {
+      color: #dcdfe1;
+    }
+  }
+  .we-do & {
+    &__header {
+      //padding-top: 126px;
+      font-size: 17px;
+      line-height: 1;
+      @include padding-between-blocks(29px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height); 
+    }
+    padding-bottom: 44px;
+    padding-top: 116px;
+    //@include padding-between-blocks(70px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height); 
+
   }
 }
