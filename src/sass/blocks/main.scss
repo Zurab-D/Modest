@@ -29,7 +29,7 @@
     font-weight: normal;
     text-align: left;
     @media (min-width: $screen-md) {
-      left: 10%;
+      left: 20%;
       width: 50%;
     }
     &__btn {
@@ -67,6 +67,7 @@
 
 
 .about {
+  padding-bottom: 100px;
   &__col-2{
      padding-top: 10px;
   }
@@ -124,6 +125,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 
@@ -205,6 +207,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 45px;
   &__item {
     position: relative;
     margin: 15px 0;
@@ -271,6 +274,7 @@
   }
   @at-root {
     .section__work {
+      padding-bottom: 60px;
       background-color: $color-dark;
     }
   }
@@ -285,7 +289,7 @@
 
 
 .features {
-  padding-bottom: 103px; 
+  padding-bottom: 103px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -364,7 +368,7 @@
     line-height: $article-text-height;
   }
   .features & {
-    @include padding-to-edge(5px, $article-text-size, $article-text-height); 
+    @include padding-to-edge(5px, $article-text-size, $article-text-height);
     &__header {
       font-size: $features-article-header-size;
       line-height: $features-article-header-height;
@@ -376,15 +380,76 @@
     }
   }
   .we-do & {
+    text-align: center;
     &__header {
-      //padding-top: 126px;
+      position: relative;
       font-size: 17px;
       line-height: 1;
-      @include padding-between-blocks(29px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height); 
+      @include padding-between-blocks(29px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height);
     }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 48px;
+      height: 48px;
+      background-image: url(#{$dirimg}/spritesheet.png);
+      background-repeat: no-repeat;
+    }
+    &--icon-cogs:before {
+      width: 48px;
+      height: 48px;
+      background-position: -63px -5px;
+    }
+    &--icon-pencil:before {
+      width: 48px;
+      height: 48px;
+      background-position: -121px -5px;
+    }
+    &--icon-phone:before {
+      width: 30px;
+      height: 48px;
+      background-position: -179px -5px;
+    }
+    &--icon-clock:before {
+      width: 48px;
+      height: 48px;
+      background-position: -5px -5px;
+    }
+
     padding-bottom: 44px;
     padding-top: 116px;
-    //@include padding-between-blocks(70px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height); 
+    //@include padding-between-blocks(70px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height);
 
+  }
+}
+
+
+
+.sprite {
+  background-image: url(#{$dirimg}/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  &-icon-clock {
+      width: 48px;
+      height: 48px;
+      background-position: -5px -5px;
+  }
+  &-icon-cogs {
+      width: 48px;
+      height: 48px;
+      background-position: -63px -5px;
+  }
+  &-icon-pencil {
+      width: 48px;
+      height: 48px;
+      background-position: -121px -5px;
+  }
+  &-icon-phone {
+      width: 30px;
+      height: 48px;
+      background-position: -179px -5px;
   }
 }

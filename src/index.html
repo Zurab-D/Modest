@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top-">
+<body id="home" data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top">
   <!-- icons -->
   <svg class="hidden" xmlns="http://www.w3.org/2000/svg" height="0" width="0" viewBox="0 0 32 188">
     <svg id="behance" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.00003480911255 28">
@@ -50,7 +50,7 @@
 
   <!-- menu -->
   <div class="container">
-    <nav class="navbar  navbar-default  navbar-fixed-top-">
+    <nav class="navbar  navbar-default  navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -65,8 +65,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
             <li><a href="#team">Team</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -309,39 +309,39 @@
 
 
 
-  <!-- what we do -->
-  <section id="we_do" class="container section section__we-do">
+  <!-- what we do (services) -->
+  <section id="services" class="container section section__we-do">
     <h2 class="section__header">What we do.</h2>
     <div class="row  we-do">
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-cogs  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Easy theme Setup</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-pencil  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Pixel perfect design</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-phone  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Responsive display</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-clock  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">24/7 support</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-cogs  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Easy theme Setup</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-pencil  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Pixel perfect design</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-phone  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">Responsive display</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
-      <div class="article  col-md-3  col-sm-6  col-xs-10">
+      <div class="article  article--icon-clock  col-md-3  col-sm-6  col-xs-10">
         <h3 class="article__header">24/7 support</h3>
         <p class="article__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
       </div>
@@ -393,7 +393,40 @@
 
 
 
-  <div><br><br><br><br><br><br><br><br><br><br><br><br></div>
+  <!-- contact -->
+  <section id="contact" class="container-fluid section section__contact">
+    <div class="container">
+      <h2 class="section__header">Stay in touch</h2>
+    </div>
+    <div class="container-fluid map"></div>
+  </section>
+  <div class="container">
+    <div class="contact  row">
+      <div class="article  col-sm-6">
+        <h3 class="article__header">Contact information</h3>
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
+        <p class="article__text">Cras fermentum elit quis magna congue, <strong>vel sodales</strong> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+      </div>
+      <div class="col-sm-6">
+        <form action="" class="feedback">
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="username">name</label>
+              <input type="text" id="username" name="username">
+            </div>
+            <div class="col-sm-6">
+              <label for="mail">your email</label>
+              <input type="text" id="mail" name="mail">
+            </div>
+          </div>
+          <div class="row">
+            <label for="text">your message</label>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.min.js"></script>
 </body>
