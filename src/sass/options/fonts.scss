@@ -1,13 +1,18 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
+  font-weight: light;
+  src: url('opensans-light.eot');
   src:
     local("Open Sans Light"),
     local("OpenSansLight"),
     local("OpenSans-Light"),
-    local("OpenSans-Light"),
-    url("#{$dirfont}/OpenSans-Light.woff2") format("woff2"),
+    local("Open-Sans-Light"),
+    url('#{$dirfont}/opensans-light.eot?#iefix') format('embedded-opentype'),
+    url('#{$dirfont}/opensans-light.woff2') format('woff2'),
+    url('#{$dirfont}/opensans-light.woff') format('woff'),
+    url('#{$dirfont}/opensans-light.ttf') format('truetype'),
+    url('#{$dirfont}/opensans-light.svg#open_sanslight') format('svg'),
     url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2) format('woff2')
   ;
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
@@ -16,10 +21,15 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
+  src: url('opensans-regular.eot');
   src:
     local("Open Sans"),
     local("OpenSans"),
-    url("#{$dirfont}/OpenSans-Regular.woff2") format("woff2"),
+    url('#{$dirfont}/opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$dirfont}/opensans-regular.woff2') format('woff2'),
+    url('#{$dirfont}/opensans-regular.woff') format('woff'),
+    url('#{$dirfont}/opensans-regular.ttf') format('truetype'),
+    url('#{$dirfont}/opensans-regular.svg#open_sansregular') format('svg'),
     url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2")
   ;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
@@ -28,10 +38,15 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
+  src: url('opensans-bold.eot');
   src:
     local("Open Sans Bold"),
     local("OpenSans-Bold"),
-    url("#{$dirfont}/OpenSans-Bold.woff2") format("woff2"),
+    url('#{$dirfont}/opensans-bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$dirfont}/opensans-bold.woff2') format('woff2'),
+    url('#{$dirfont}/opensans-bold.woff') format('woff'),
+    url('#{$dirfont}/opensans-bold.ttf') format('truetype'),
+    url('#{$dirfont}/opensans-bold.svg#open_sansbold') format('svg'),
     url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format("woff2")
   ;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
@@ -42,22 +57,35 @@
 @font-face {
   font-family: 'Quattrocento Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
+  src: url('quattrocentosans-regular.eot');
   src:
     local('Quattrocento Sans'),
     local('QuattrocentoSans'),
-    url("#{$dirfont}/QuattrocentoSans-Regular.woff2") format("woff2"),
-    url(https://fonts.gstatic.com/s/quattrocentosans/v8/efd6FGWWGX5Z3ztwLBrG9cZ4HySTEWshgORbPp2tk8k.woff2) format('woff2');
+    local('Quattrocento-Sans'),
+    url('#{$dirfont}/quattrocentosans-regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$dirfont}/quattrocentosans-regular.woff2') format('woff2'),
+    url('#{$dirfont}/quattrocentosans-regular.woff') format('woff'),
+    url('#{$dirfont}/quattrocentosans-regular.ttf') format('truetype'),
+    url('#{$dirfont}/quattrocentosans-regular.svg#quattrocento_sansregular') format('svg'),
+    url(https://fonts.gstatic.com/s/quattrocentosans/v8/efd6FGWWGX5Z3ztwLBrG9cZ4HySTEWshgORbPp2tk8k.woff2) format('woff2')
+  ;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face {
   font-family: 'Quattrocento Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
+  src: url('quattrocentosans-bold.eot');
   src:
     local('Quattrocento Sans Bold'),
     local('QuattrocentoSans-Bold'),
-    url("#{$dirfont}/QuattrocentoSans-Bold.woff2") format("woff2"),
-    url(https://fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIbvMLSVzqOGkoxdgTSsKqWM.woff2) format('woff2');
+    url('#{$dirfont}/quattrocentosans-bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$dirfont}/quattrocentosans-bold.woff2') format('woff2'),
+    url('#{$dirfont}/quattrocentosans-bold.woff') format('woff'),
+    url('#{$dirfont}/quattrocentosans-bold.ttf') format('truetype'),
+    url('#{$dirfont}/quattrocentosans-bold.svg#quattrocento_sansbold') format('svg'),
+    url(https://fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIbvMLSVzqOGkoxdgTSsKqWM.woff2) format('woff2')
+  ;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
