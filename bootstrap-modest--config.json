@@ -115,10 +115,10 @@
     "@dropdown-link-disabled-color": "@gray-light",
     "@dropdown-header-color": "@gray-light",
     "@dropdown-caret-color": "#000",
-    "@screen-xs": "320px",
+    "@screen-xs": "480px",
     "@screen-xs-min": "@screen-xs",
     "@screen-phone": "@screen-xs-min",
-    "@screen-sm": "540px",
+    "@screen-sm": "768px",
     "@screen-sm-min": "@screen-sm",
     "@screen-tablet": "@screen-sm-min",
     "@screen-md": "992px",
@@ -134,7 +134,7 @@
     "@grid-gutter-width": "30px",
     "@grid-float-breakpoint": "@screen-sm-min",
     "@grid-float-breakpoint-max": "(@grid-float-breakpoint - 1)",
-    "@container-tablet": "(@screen-sm - @grid-gutter-width)",
+    "@container-tablet": "(720px + @grid-gutter-width)",
     "@container-sm": "@container-tablet",
     "@container-desktop": "(940px + @grid-gutter-width)",
     "@container-md": "@container-desktop",
@@ -410,5 +410,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=4a011678fe3118941636059be016b5af"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=60291c7748b2480372c1f6760c463293"
 }

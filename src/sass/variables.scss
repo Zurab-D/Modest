@@ -8,10 +8,12 @@ $dirimg: '../img/';
 
 $color-base: #8d8f92;
 $color-invert: rgba(#fff, 0.8);
+$color-navbar: #1d2126;
 $color-greeny: #23b7a4;
 $color-header: #292f36;
 $color-dark: #3a454d;
 $color-socials: #c8cdd0;
+$color-grey: #5b6168;
 
 $article-text-size: 16px;
 $article-text-height: 26px;
@@ -21,3 +23,5 @@ $features-article-header-height: 42px;
 
 $wedo-article-header-size: 17px;
 $wedo-article-header-height: 1;
+
+$transition-duration: 0.15s;

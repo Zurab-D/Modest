@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         }]
       },
 
-      watch_html: {
+      watch: {
         files: [{
           expand: true,
           cwd: "src",
@@ -96,33 +96,26 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
-          "node_modules/mustache/mustache.min.js",
-          "node_modules/moment/min/moment-with-locales.min.js",
+          //"node_modules/mustache/mustache.min.js",
+          //"node_modules/moment/min/moment-with-locales.min.js",
           "src/js/vendor/jquery-1.12.0.min.js",
+          "src/js/vendor/owl.carousel.js",
+          "src/js/vendor/bootstrap.js",
           "src/js/googleMap.js",
-          "src/js/gotop.js",
-          "src/js/script.js",
+          "src/js/vendor/smooth-menu-scroll.js",
+          //"src/js/gotop.js",
+          "src/js/script.js"
         ],
         dest: "build/js/script.js"
       },
-      /*watch: {
-        src: [
-          "node_modules/mustache/mustache.min.js",
-          "node_modules/moment/min/moment-with-locales.min.js",
-          "src/js/googleMap.js",
-          "src/js/vendor/jquery-1.12.0.min.js",
-          "src/js/gotop.js",
-          "src/js/script.js",
-        ],
-        dest: "src/js/script.con"
-      }*/
       watch: {
         src: [
           "src/js/vendor/jquery-1.12.0.min.js",
+          "src/js/vendor/owl.carousel.js",
           "src/js/vendor/bootstrap.js",
           "src/js/googleMap.js",
-          "src/js/smooth-menu-scroll.js",
-          "src/js/script.js",
+          "src/js/vendor/smooth-menu-scroll.js",
+          "src/js/script.js"
         ],
         dest: "src/js/script.min.js"
       }
@@ -179,7 +172,7 @@ module.exports = function(grunt) {
 
       html: {
         files: ["src/*.html"],
-        tasks: ["clean:watch", "copy:watch_html"],
+        tasks: ["clean:watch", "copy:watch"],
         options: {
           spawn: false,
           livereload: true
