@@ -9,21 +9,10 @@ nav.navbar.my-navbar {
   }
   & li {
     a {
-      //text-align: center;
       text-transform: uppercase;
       line-height: 10px;
       line-height: 0.5;
       padding: 20px;
-      //border: 2px solid $color-navbar;
-      //border-radius: 5px;
-      //font-size: 14px;
-      //color: #a4aead;
-      /* &:last-child {
-        margin-right: 8px;
-      }
-      &:hover{
-        border: 2px solid $color-grey;
-      } */
     }
     &.active a {
       color: $color-greeny;
@@ -82,11 +71,9 @@ nav.navbar.my-navbar {
 
 
 .carousel {
-  z-index: 1000;
   &-inner{
     & .item {
       height: 660px;
-      //height: 60vw;
       overflow: hidden;
       & img {
         min-height: 100%;
@@ -153,7 +140,6 @@ nav.navbar.my-navbar {
 
 
 .section {
-  //padding-bottom: 100px;
   &__header {
     @include callout;
     &--invert {
@@ -229,6 +215,7 @@ nav.navbar.my-navbar {
   }
   &__svg {
     @include svg;
+    position: static;
   }
 }
 
@@ -349,7 +336,6 @@ nav.navbar.my-navbar {
     display: block;
     flex-grow: 1;
     background-color: rgba(#444, 0.5);
-    //opacity: 0.5;
     font-size: 0;
     font-weight: bold;
     color: #fff;
@@ -519,9 +505,7 @@ nav.navbar.my-navbar {
 
     padding-bottom: 44px;
     padding-top: 116px;
-    //@include padding-between-blocks(70px, $wedo-article-header-size, $wedo-article-header-size, $article-text-size, $article-text-height);
-
-      }
+  }
 }
 
 
@@ -653,7 +637,6 @@ nav.navbar.my-navbar {
       display: inline-block;
       width: 33px;
       height: 33px;
-      //background-color: $color-socials;
       margin-right: 1px;
       svg {
         @include svg;
@@ -661,10 +644,6 @@ nav.navbar.my-navbar {
     }
     &-svg {
       @include svg;
-      &--fb {}
-      &--sk {}
-      &--be {}
-      &--in {}
     }
   }
   @media(max-width: $screen-md) {
