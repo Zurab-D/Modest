@@ -118,6 +118,7 @@ module.exports = function(grunt) {
           "src/js/script.js"
         ],
         dest: "src/js/script.min.js"
+        //dest: "src/js/script.con"
       }
     },
 
