@@ -4447,7 +4447,7 @@ if (typeof jQuery === 'undefined') {
         }}
     });
 
-    if ($("body").scrollTop() > 80) {
+    if (Math.abs($('body')[0].getBoundingClientRect().top) > 80) {
       $('.navbar-fixed-top').removeClass('my-navbar--initial');
     } else {
       $('.navbar-fixed-top').addClass('my-navbar--initial');
@@ -4456,7 +4456,7 @@ if (typeof jQuery === 'undefined') {
 })(jQuery);
 
 $(window).scroll(function(){
-  if ($("body").scrollTop() > 80) {
+  if (Math.abs($('body')[0].getBoundingClientRect().top) > 80) {
     $('.navbar-fixed-top').removeClass('my-navbar--initial');
   } else {
     $('.navbar-fixed-top').addClass('my-navbar--initial');
